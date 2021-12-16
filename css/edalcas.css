@@ -1,0 +1,478 @@
+:root {
+    --color-cuerpo: linear-gradient(0deg, black,#3141ff,white);
+    --color-cabeza:linear-gradient(0deg,#a2a9ff,white);
+    --color-letra-form-login-contactenos:white;
+    --color-letra-pie:white;
+    --color-divs-planes:white; 
+    --color-botones:white;
+    --color-botones-cabeza:linear-gradient(0deg,#2436b3,#828cff);
+    --color-boton-pie:linear-gradient(165deg, #0095ff, #2be2da);
+}
+
+/********************************************************/
+#contenedor{
+	width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background:var(--color-cuerpo);
+}
+
+#cabeza{
+	width: 400px;
+	height: 131px;
+    float: left;
+	background:var(--color-cabeza);
+}
+
+#cabeza img{
+	width: 100%;
+	height: 100%;
+}
+
+/*************************** botones***************************/
+#botones{
+	width: 100%;
+	display: none ;
+	height: 50px;
+    z-index: 1;
+    top: 81px;
+}
+#botones:focus{
+    outline: none;
+}
+
+
+/****************************************************************/
+#cuerpo{
+	width: 100%;
+	height: 68%;
+	overflow-y: auto;
+}
+/***************************** pie *****************************/
+#pie{
+    height: 70px;
+    width: 100%;
+    display:none;
+    text-align: right;	
+}
+
+#destinoMostrar{
+    float: left;
+    font-size: 3em;
+    margin: 0px 5px;
+}
+
+/******************** plantilla login ***************/
+#datos{
+	padding: 60px 50px;
+    color:var(--color-letra-form-login-contactenos);
+    width: 50%;
+    margin: auto;
+}
+
+#login button{
+	margin: auto;
+}
+
+#ingresar{
+	margin-left: 64%;
+}
+
+/**********************plantilla inicio *****************/
+
+#quienes{
+    height: 47%;
+    width: 100%;
+    padding: 20px;
+}
+
+#quienes h1{
+    text-align: center;
+}
+
+/**********************plantilla planes **********************/
+.tituloPlanes{
+    text-align: center;
+    font-size: 2.4em;
+    margin: 20px;
+}
+
+.planes{
+    border-style: solid;
+    border-radius: 80px;
+    width: 60%;
+    margin: 10px auto;
+    padding: 3px;
+    text-align: center;
+}
+
+.planes i:hover{
+    color: yellow;
+}
+
+
+/*********************************** plantilla contactanos *******************/
+iframe{
+	margin: 5%;
+    width: 90%
+}
+#contacto img{
+    width: 34px;
+    height: 33px;
+    margin: 12px;
+}
+
+#contacto{
+	height: 100%;
+	width:100%;
+	text-align: center;
+	color:var(--color-letra-form-login-contactenos);
+}
+
+#correo{
+    height: 400px;
+    width: 85%;
+    margin: auto;
+}
+
+.field{
+    margin-top: 30px;
+}
+
+.field .control textarea{
+    height: 130px
+}
+
+/***************************** TEXTO ANIMADO PIE ***********************************/
+#destinoNombreTelefono{
+    display: flex;
+    height: 40px;
+    color: var(--color-letra-pie);
+    font-size: 27px;
+    float: left;
+    margin: 15px 1px 1px 0px;
+    overflow: hidden;
+
+}
+#destinoNombreTelefono ul{
+    list-style: none;
+    padding-left: 10px;
+    animation: cambiar 7s infinite;
+}
+#destinoNombreTelefono ul, p{
+    margin: 0;
+}
+
+@keyframes cambiar{
+
+    0%{margin-top: 0;}
+    20%{margin-top: 0;}
+
+
+
+    55%{margin-top: -40px;}
+    80%{margin-top: -40px;}
+
+
+
+    100%{margin-top: 0;}
+}
+
+
+.bton{
+    border-radius: 10px;
+     width: 76%;
+     s
+}
+
+
+.ton{
+    border-radius: 10px;
+     width: 45%;
+     margin: 10px;
+     height: 36px;
+}
+
+/*********************parallax*****************************/
+#wrapper {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 95% !important;
+    margin-top: 10px;
+}
+#wrapper section {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 1440px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100% !important;
+}
+#bloque1 {
+    background-image: url("../img/bloque1.jpg");
+}
+#bloque2 {
+    background-image: url("../img/bloque2.jpg");
+}
+#bloque3 {
+    background-image: url("../img/bloque3.png");
+}
+#bloque4 {
+    background-image: url("../img/bloque4.jpg");
+}
+#bloque5 {
+    background-image: url("../img/bloque5.jpg");
+}
+
+/*************************** SLIDE***************************/
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#mySlides1 {
+    display:block;
+    
+}
+
+
+.mySlides>img{
+    height: 100%;
+    width: 100%;
+}
+
+#w3{
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    position: relative;
+    height: 82%;
+    width: 50%;
+    /* margin: auto; */
+    margin-top: 46px;
+    margin-left: 8px;
+    margin-right: 16px;
+    float: left;
+/*
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    position: relative;
+    height: 82%;
+    width: 98%;
+    margin: auto;
+    margin-top: 45px;*/
+}
+
+#btnizq{
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    height: 100%;
+   
+}
+
+#btnder{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    height: 100%;
+}
+/********************* BOTONES PIE *************************************/
+#botonesM{
+    position: relative;
+    top: 7px;
+    left: 7px;
+    /* transform: translate(-50%,-50%); */
+    margin: auto;
+    padding: 0;
+    display: flex;
+    width: 140px;
+    height: 55px;
+}
+#botonesM:before{
+    content: "\f095";
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--color-boton-pie);
+    border-radius: 30px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 2px;
+    transition: 0.25s;
+    z-index: 1;
+}
+#botonesM:hover:before{
+    width: 60px;
+}
+#botonesM li{
+    position: absolute;
+    list-style: none;
+    transition: 1s;
+}
+#botonesM li a{
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 53px;
+    text-align: center;
+    color: #fff;
+    margin: 0 2px;
+    border-radius: 50%;
+    font-size: 30px;
+    transition: 1s;
+}
+#botonesM li:nth-child(1) a{
+    background: #25D366;
+}
+#botonesM li:nth-child(2) a{
+    background: #3b5999;
+}
+#botonesM:hover li:nth-child(1) a{
+    transform: translateX(64px) rotate(360deg);
+    transition-delay: 0.4s
+}
+#botonesM:hover li:nth-child(2) a{
+    transform: translateX(128px) rotate(360deg);
+    transition-delay: 0.2s
+}
+
+/******************** BTNS CABEZA *****************************************/
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    background: var(--color-principal);
+    width: 100%;
+    box-sizing: border-box;
+}
+header .logo{
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+    display: none;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header nav ul li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+header nav ul li a{
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active{
+    color: #fff;
+    background: #2196f3;
+}
+.menu-toggle{
+    color:#fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px){
+    
+    #cabeza{
+        width: 400px;
+        height: 131px;
+        float: none;
+        margin: auto;
+        background: var(--color-cabeza);
+    }
+
+    /****************************** DATOS ******************************/
+    #datos{
+        width: 90%;
+        margin: 0;
+    }
+    #ingresar{
+        margin-left: 13%;
+    }
+
+
+    /************************* BTN CABEZA PQ ***********/
+    #botones{
+       width: 100%;
+        display: none;
+        height: 50px;
+        z-index: 1;
+        top: 0;
+    }
+    header{
+        padding: 0 20px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        width: 63%;
+        background:var(--color-botones-cabeza) ;
+        opacity: 0.7;
+        top:50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header .logo{
+        display: block;
+    }
+    header nav.active{
+        left: 0;
+    }
+    header nav ul{
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a{
+        border-bottom: 1px solid rgba(0,0,0,.2);
+    }
+
+    /********************** CUERPO ********************/
+    #cuerpo {
+    width: 100%;
+    height: 57%;
+    overflow-y: auto;
+    }
+
+    /************************** W3 ********************/
+    #w3{
+         box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+        position: relative;
+        height: 82%;
+        width: 98%;
+        margin: auto;
+        margin-top: 45px;
+    }
+
+}

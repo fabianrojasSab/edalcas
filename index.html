@@ -1,0 +1,166 @@
+<!--********************************************************
+ 	PROYECTO: Edalcas
+ 	PROGRAMA: index.html
+ 	MODIFICADO: OCT/21/2018
+ 	ver: 3.0
+ 	NOTA : MUESTRA LAS IMAGENES DEL SLIDE DESDE LA BASE DE DATOS Y LA PLANTILLA INICIO ESTA ORGANIZADA
+ 		SE LE MODIFICA EL BOTON DE LOS PLANES 
+*********************************************************-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>edalcas</title>
+	<link rel="stylesheet" type="text/css" href="css/edalcas.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet"> <!--para los botonespies-->
+
+</head>
+<body>
+	<div id="contenedor">
+
+		<div id="cabeza">
+			<img src="img/logo.png">
+		</div>
+
+		<header id="botones">
+			<div class="logo">MENU</div>
+			<nav >
+				<ul>
+					<li><a onclick="mostrarInicio('inicio','0')">Inicio</a></li>
+					<li><a onclick="mostrarPlanes('planes', '1')">Planes</a></li>
+					<li><a onclick="mostrarContactenos('contactenos', '2')">Contactenos</a></li>
+					<li><a onclick="salir()">Salir</a></li>
+				</ul>
+			</nav>
+			<div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		</header>
+
+		<div id="cuerpo">
+
+		<!-- ***************insertar plantillas *****************************************************************-->
+
+
+		</div>
+
+		<div id="pie">
+			<div id="destinoNombreTelefono">
+
+			</div>
+			<ul id="botonesM">
+				<li><a href="https://api.whatsapp.com/send?phone=0123456789"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+				<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>
+
+
+
+	<!-- ***************plantillas*****************************************************************-->
+	<template id="login" >
+
+		<form id="datos" >
+		  <div class="form-group">
+		    <label for="exampleInputEmail1">Nombre</label>
+		    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre">
+		  </div>
+
+		  <div class="form-group">
+		    <label for="exampleInputPassword1">Telefono</label>
+		    <input type="text" class="form-control" id="numCel" name="numCel" placeholder="Ingrese N° Telefono">
+		  </div>
+		</form>
+		<button  class="btn btn-primary" id="ingresar" onclick ="validarIngreso()">ingresar</button>
+
+	</template>
+
+	<template id="inicio">
+
+			<div id="w3">
+			   <!--div class="mySlides" id="mySlides1"><img src="img/slide5.jpg"></div>
+			   <div class="mySlides"> <img src="img/slide1.jpg"></div>
+			   <div class="mySlides"> <img src="img/slide2.jpg"></div>
+		 	   <div class="mySlides"> <img src="img/slide3.jpg"></div>
+		 	   <div class="mySlides"> <img src="img/slide4.jpg"></div>
+		 	   <div class="mySlides"> <img src="img/slide5.jpg"></div>
+		 	  <button  id="btnizq" onclick="correrSlide(-2)"> <img src=""></button>
+			  <button  id="btnder" onclick="correrSlide(0)"> <img src=""></button-->
+			</div> 
+
+			<div id="quienes">
+				<h1>¿QUIENES SOMOS?</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad voluptate earum suscipit fugit, consectetur, blanditiis tempore accusamus nostrum animi, quis id. Illum quia nostrum veritatis quis tempore. Velit consequatur, et facere commodi, fugit ab aliquid iure quam, tempore nostrum magni id a ducimus doloremque provident impedit incidunt. Rem, ratione, sed. Saepe dicta odio, fugiat repellat dolor adipisci neque consequuntur, magnam consequatur tenetur alias, enim distinctio incidunt dolores similique. Harum ad veniam adipisci repellendus amet debitis animi, numquam illum cumque tenetur quibusdam at excepturi minus reiciendis aut, repudiandae officia magni nostrum esse ipsum consequuntur, aperiam voluptatem. Totam tempora excepturi id ullam ratione ab error voluptate pariatur facilis vero explicabo maxime veniam, distinctio ducimus repudiandae nemo dignissimos culpa minima quis sit corrupti a alias. Illo in, animi consequuntur error placeat dignissimos nostrum omnis delectus atque quo laudantium, commodi quisquam! Alias molestiae necessitatibus modi commodi explicabo soluta vero amet? Sint eveniet sit veritatis provident nisi asperiores error rerum porro assumenda ducimus, praesentium autem nulla libero hic illum, id voluptate, unde beatae rem molestiae natus recusandae corporis earum ratione! Quam deserunt culpa facilis numquam eius amet nobis id reprehenderit, repellat voluptatum unde totam! Natus, totam? Quia necessitatibus, laudantium repellat mollitia facilis delectus vero natus tempora excepturi dolorem ratione illo, id sequi nostrum neque suscipit non autem maxime error ullam culpa. Laborum optio consectetur temporibus obcaecati ducimus voluptas qui! Culpa cupiditate, amet deserunt dolorum natus quae maiores, dicta eos nulla explicabo repellendus eveniet. Aliquam facere distinctio voluptate neque quasi est ipsam quo ullam quae, et. Aut error, et. Molestias aut repellat officia, blanditiis vero, sit est necessitatibus reiciendis explicabo dolor odit at ad possimus quibusdam ut, fugiat repudiandae adipisci eveniet, iure et soluta? Sunt ratione quaerat doloribus aliquam accusantium? Esse saepe odio, distinctio illum consequatur recusandae accusamus! Maxime unde eius porro magnam, nobis, ipsum nam.</p>
+			</div>
+	</template>
+
+	<template id="planes">
+		<div  id="wrapper">
+			<section id="bloque1" onclick="consultarPlan('div1', 'INTERNET FIJO NEGOCI')">
+				<h2 class="tituloPlanes">INTERNET FIJO NEGOCIO</h2>
+				<div id="div1"></div>
+			</section>
+			
+			<section id="bloque2" onclick="consultarPlan('div2', 'FULL HOGAR TRÍO')">	
+				<h2 class="tituloPlanes">FULL HOGAR <br>TRIO</h2>
+				<div id="div2"></div>
+			</section>
+
+			<section id="bloque3" onclick="consultarPlan('div3', 'FULL HOGAR DÚO')">
+				<h2 class="tituloPlanes">FULL HOGAR <br>DUO</h2>
+				<div id="div3"></div>
+			</section>
+
+			<section id="bloque4" onclick="consultarPlan('div4', 'FIBRA ÓPTICA TRÍO')">
+				<h2 class="tituloPlanes">FIBRA OPTICA <br>TRIO</h2>
+				<div id="div4"></div>
+			</section>
+
+			<section id="bloque5" onclick="consultarPlan('div5', 'FIBRA ÓPTICA DÚO')">
+				<h2 class="tituloPlanes">FIBRA OPTICA <br>DUO</h2>
+				<div id="div5"></div>
+			</section>
+		</div>
+	</template>
+
+	<template id="contactenos">
+		
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5662658.554994858!2d-2.4346370090770395!3d46.131427513192115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd54a02933785731%3A0x6bfd3f96c747d9f7!2sFrancia!5e0!3m2!1ses!2sco!4v1536585749156" width="344" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+			<div id="contacto">
+				<form id="correo">
+					<div class="field">
+					  <label class="label">Nombre</label>
+					  <div class="control">
+					    <input class="bton" name="nombre" type="text" placeholder="Ingrese Nombre">
+					  </div>
+					</div>
+
+					<div class="field">
+					  <label class="label">Correo Electronico</label>
+					  <div class="control">
+					    <input class="bton" name="correo" type="email" placeholder="Email input" value="hello@">
+					   
+					  </div>
+					</div>
+
+					<div class="field">
+					  <label class="label">Mensaje</label>
+					  <div class="control">
+					    <textarea class="bton" name="mensaje" placeholder="Mensaje"></textarea>
+					  </div>
+					</div>
+				</form>
+				<button class="ton" onclick="enviarCorreo()">Enviar</button>
+			</div>
+
+	</template>
+
+	<script src="js/jquery3.3.1.js"></script>
+	<script src="js/vista.js"></script>
+	<script src="js/modelo.js"></script>
+	<script src="js/controlador.js"></script>
+	
+</body>
+</html>
