@@ -1,8 +1,8 @@
 <?php
-$host = 'biwshojlq7viry0rd5oz-mysql.services.clever-cloud.com';
-$db   = 'biwshojlq7viry0rd5oz';
-$user = 'u2r3cm175mwzd0er';
-$pass = 'HYHCgRYadrq4Nqd37V8z';
+$host = 'blraqjbcamdniyldcytz-mysql.services.clever-cloud.com';
+$db   = 'blraqjbcamdniyldcytz';
+$user = 'uwroz7dlf6hnf6rg';
+$pass = 'a4QQFeXEY5NjNAyAJFng';
 $charset = 'utf8mb4';
 
 /******************************/
